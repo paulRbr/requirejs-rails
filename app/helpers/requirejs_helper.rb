@@ -102,3 +102,5 @@ module RequirejsHelper
     [asset_host, Rails.application.config.assets.prefix].join
   end
 end
+
+ActionView::Base.send :include, RequirejsHelper
